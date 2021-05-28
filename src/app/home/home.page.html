@@ -3,10 +3,10 @@
     <!-- <ion-icon slot="start" (click)="">Back</ion-icon> -->
     <ion-title>
       <img alt="logo" height="40"   src="../../../assets/logo.jpg">
-      Your Insurance Account, {{ username }}
+      Su cuenta de Seguros, {{ username }}
     </ion-title>
-    <ion-button slot="end" (click)="gotohistory()">My Quotes</ion-button>
-    <!-- "getQuoteHistory();submitted = !submitted">{{ submitted && queryLoaded ? "Hide Quotes" : "My Quotes" }} -->
+    <ion-button slot="end" (click)="gotohistory()">Mis Cuotas</ion-button>
+    <!-- "getQuoteHistory();submitted = !submitted">{{ submitted && queryLoaded ? "Hide Quotes" : "Mis Cuotas" }} -->
     <ion-button slot="end" (click)="logout()">Logout</ion-button>
   </ion-toolbar>
 </ion-header>
@@ -24,7 +24,7 @@
         <div class="center">
         <ion-card-title>
           <ion-icon name="person-circle-outline"></ion-icon>
-          Insurance plan fastquote
+          Cuota Plan Seguros Salud
         </ion-card-title>
         </div>
         <ion-card-content>
@@ -34,23 +34,23 @@
               <ion-col>{{ item.pk }}</ion-col>
             </ion-row>
             <ion-row>
-              <ion-col>Time of quote</ion-col>
+              <ion-col>Fecha-hora Cuota</ion-col>
               <ion-col>{{ item.timestamp }}</ion-col>
             </ion-row>
             <ion-row>
-              <ion-col>Duration of Policy</ion-col>
-              <ion-col>{{ item.duration }} months</ion-col>
+              <ion-col>Duración de Póliza</ion-col>
+              <ion-col>{{ item.duration }} Meses</ion-col>
             </ion-row>
             <!-- <ion-row>
-              <ion-col>Biological Gender</ion-col>
+              <ion-col>Género</ion-col>
               <ion-col> todo.value.gender </ion-col>
             </ion-row> -->
             <!-- <ion-row>
-              <ion-col>Smoker</ion-col> 
+              <ion-col>Fumador</ion-col> 
               <ion-col> todo.value.smoke </ion-col>
             </ion-row> -->
             <ion-row>
-              <ion-col>Quote price</ion-col>
+              <ion-col>Precio Cuota</ion-col>
               <ion-col>
                 <ion-label>€ {{ item.quote }} <span>pm*</span></ion-label>
               </ion-col>
@@ -60,12 +60,12 @@
       </ion-card>
     </ion-slide>
   </ion-slides>
-      <!-- <strong><ion-button (click)="gotoform()" color="primary">Start Assessment</ion-button></strong> -->
+      <!-- <strong><ion-button (click)="gotoform()" color="primary">Solicitar Cuota</ion-button></strong> -->
 <ion-grid>
   <ion-row>
     <ion-col></ion-col>
     <ion-col>
-      <ion-button (click)="gotoform()" color="primary" >Start New Assessment</ion-button>
+      <ion-button (click)="gotoform()" color="primary" >Solicitar Nueva Cuota</ion-button>
       <!-- fill="outline" -->
     </ion-col>
     <ion-col></ion-col>
