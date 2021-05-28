@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-button slot="start" (click)="gobacktohome()">Home</ion-button>
-    <ion-title>New Insurance Quote Form</ion-title> 
+    <ion-title>Formulario Petición Póliza Seguro Salud</ion-title> 
     <ion-title slot="end">{{ username }}</ion-title>
     <ion-button slot="end" (click)="logout()">Logout</ion-button>
   </ion-toolbar>
@@ -19,24 +19,24 @@
             <ion-input type="text" formControlName="title"></ion-input>
           </ion-item> -->
           <ion-item>
-            <ion-label>Policy Duration*</ion-label>
+            <ion-label>Duración Póliza*</ion-label>
             <ion-input type="number" placeholder="Number in months" formControlName="policyDuration"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label>Date of Birth*</ion-label>
+            <ion-label>Fecha de Nacimiento*</ion-label>
             <ion-input type="date" placeholder="dd/MM/yy" formControlName="dob"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label>Smoker*</ion-label>
+            <ion-label>Fumador*</ion-label>
             <ion-select [class.invalid]="!todo.controls.smoke.valid && (todo.controls.smoke.dirty || submitAttempt)"
-            formControlName="smoke" placeholder="Yes/No">
+            formControlName="smoke" placeholder="Si/No">
               <ion-select-option *ngFor="let option of smoker" [value]="option.value">{{ option.viewValue }}</ion-select-option>
               <!-- <ion-select-option value="no">No</ion-select-option> -->
             </ion-select>
             <!-- <ion-toggle fromControlName="smoker" (ionChange)="notify()"></ion-toggle> -->
           </ion-item>
         <ion-item>
-          <ion-label>Biological Gender*</ion-label>
+          <ion-label>Género*</ion-label>
           <ion-select [class.invalid]="!todo.controls.gender.valid && (todo.controls.gender.dirty || submitAttempt)"
           formControlName="gender" placeholder="Select One">
               <ion-select-option *ngFor="let sex of sexes" [value]="sex.value">{{sex.viewValue}}</ion-select-option>
@@ -49,7 +49,7 @@
             <div class="center">
             <ion-card-title>
               <ion-icon name="person-circle-outline"></ion-icon>
-              Insurance plan fastquote
+              Cuota Póliza Seguros Salud
             </ion-card-title>
             </div>
             <ion-card-content>
