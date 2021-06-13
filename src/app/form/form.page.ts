@@ -2,6 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Auth, API } from 'aws-amplify';
+import Analytics from '@aws-amplify/analytics';
+
+Analytics.autoTrack('pageView', {
+  enable: true,
+  type: 'SPA'
+});
+Analytics.autoTrack('session', {
+  enable: true
+});
+
+  Analytics.record({ name: 'requestquote-start'}); 
 
 @Component({
   selector: 'app-form',
@@ -19,15 +30,15 @@ export class FormPage implements OnInit {
   policyDuration: any;
   age: any;
 
-  
+
 
   sexes: any = [
-    { value: 'Male', viewValue: "Male" },
-    { value: 'Female', viewValue: "Female" }
+    { value: 'Hombre', viewValue: "Hombre" },
+    { value: 'Mujer', viewValue: "Mujer" }
   ];
 
   smoker: any = [
-    { value: 'Yes', viewValue: "Yes" },
+    { value: 'Si', viewValue: "Si" },
     { value: 'No', viewValue: "No" }
   ];
 
@@ -56,6 +67,10 @@ export class FormPage implements OnInit {
       var ageDate = new Date(ageDifMs); // miliseconds from epoch
       return Math.abs(ageDate.getUTCFullYear() - 1970);
   };
+
+    
+
+
 
     public logout(){
       Auth.signOut().then(res=>{
@@ -92,7 +107,8 @@ export class FormPage implements OnInit {
         console.log(response);
         this.submitted = true;
         this.quote = response.data.quote;
-        // this.todo.reset();
+         // this.todo.reset();
+         Analytics.record({ name: 'requestquote-put'}); 
       })
       .catch(error => {
         console.log(error.response);
