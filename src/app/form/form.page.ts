@@ -2,7 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Auth, API } from 'aws-amplify';
+import Analytics from '@aws-amplify/analytics';
 
+Analytics.autoTrack('pageView', {
+  enable: true,
+  type: 'SPA'
+});
+Analytics.autoTrack('session', {
+  enable: true
+});
+
+  Analytics.record({ name: 'requestquote-startIRE'}); 
 @Component({
   selector: 'app-form',
   templateUrl: './form.page.html',
