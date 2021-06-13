@@ -3,9 +3,9 @@
     <!-- <ion-icon slot="start" (click)="">Back</ion-icon> -->
     <ion-title>
       <img alt="logo" height="40"   src="../../../assets/logo.jpg">
-      Su cuenta de Seguros, {{ username }}
+      Su Póliza de Seguros, {{ username }}
     </ion-title>
-    <ion-button slot="end" (click)="gotohistory()">Sus Cuotas</ion-button>
+    <ion-button slot="end" (click)="gotohistory()">Mis Cuotas</ion-button>
     <!-- "getQuoteHistory();submitted = !submitted">{{ submitted && queryLoaded ? "Hide Quotes" : "Mis Cuotas" }} -->
     <ion-button slot="end" (click)="logout()">Logout</ion-button>
   </ion-toolbar>
@@ -24,21 +24,21 @@
         <div class="center">
         <ion-card-title>
           <ion-icon name="person-circle-outline"></ion-icon>
-          Cuota Plan Seguros Salud
+          Plan Seguros InsucoES
         </ion-card-title>
         </div>
         <ion-card-content>
           <ion-grid>
             <ion-row>
-              <ion-col>Identifier:</ion-col>
+              <ion-col>Identificador:</ion-col>
               <ion-col>{{ item.pk }}</ion-col>
             </ion-row>
             <ion-row>
-              <ion-col>Fecha-hora Cuota</ion-col>
+              <ion-col>Timestamp</ion-col>
               <ion-col>{{ item.timestamp }}</ion-col>
             </ion-row>
             <ion-row>
-              <ion-col>Duración de Póliza</ion-col>
+              <ion-col>Duración de la Póliza</ion-col>
               <ion-col>{{ item.duration }} Meses</ion-col>
             </ion-row>
             <!-- <ion-row>
@@ -60,12 +60,12 @@
       </ion-card>
     </ion-slide>
   </ion-slides>
-      <!-- <strong><ion-button (click)="gotoform()" color="primary">Solicitar Cuota</ion-button></strong> -->
+      <!-- <strong><ion-button (click)="gotoform()" color="primary">Evaluación Póliza</ion-button></strong> -->
 <ion-grid>
   <ion-row>
     <ion-col></ion-col>
     <ion-col>
-      <ion-button (click)="gotoform()" color="primary" >Solicitar Nueva Cuota</ion-button>
+      <ion-button (click)="gotoform()" color="primary" >Nueva Evaluación Póliza</ion-button>
       <!-- fill="outline" -->
     </ion-col>
     <ion-col></ion-col>
