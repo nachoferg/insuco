@@ -1,4 +1,4 @@
-# InsucoES - InsucoUS (Sample project using AWS Amplify/Ionic/Angular) 
+# InsucoES -  (Sample project using AWS Amplify/Ionic/Angular) 
 
 This project is a sample for using AWS Amplify to build and host an Ionic + Angular frontend with 
 - Amazon DynamoDB: For backend database
