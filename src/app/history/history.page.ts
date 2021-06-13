@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 import { API, Auth } from 'aws-amplify';
 import { time } from 'console';
+import Analytics from '@aws-amplify/analytics';
 Analytics.autoTrack('pageView', {
   enable: true,
   type: 'SPA'
