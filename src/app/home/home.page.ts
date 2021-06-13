@@ -11,6 +11,9 @@ Analytics.autoTrack('pageView', {
 Analytics.autoTrack('session', {
   enable: true
 });
+Analytics.autoTrack('event', {
+  enable: true
+});
 
   Analytics.record({ name: 'quotehome-startIRE'}); 
 @Component({
