@@ -3,7 +3,15 @@ import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 import { API, Auth } from 'aws-amplify';
 import { time } from 'console';
+Analytics.autoTrack('pageView', {
+  enable: true,
+  type: 'SPA'
+});
+Analytics.autoTrack('session', {
+  enable: true
+});
 
+  Analytics.record({ name: 'requestquotehistory-startIreland'}); 
 @Component({
   selector: 'app-history',
   templateUrl: './history.page.html',
