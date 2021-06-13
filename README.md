@@ -1,4 +1,4 @@
-# NewCo (Sample project using AWS Amplify/Ionic/Angular) 
+# NewCo Base - insucoUS (Sample project using AWS Amplify/Ionic/Angular) 
 
 This project is a sample for using AWS Amplify to build and host an Ionic + Angular frontend with 
 - Amazon DynamoDB: For backend database
@@ -9,6 +9,7 @@ This project is a sample for using AWS Amplify to build and host an Ionic + Angu
 - Amazon Cognito: For handling userpools and auth
 - AWS Amplify: For tying and managing all of the above together
 - AWS CloudFormation: Provider for AWS Amplify to deploy and manage backend resources
+- Amazon Pinpoint: Collect events and statistics on User Behaviour (Optional)
 
 Sample acts as a User trying to getting an insurance quote on entering some information like DOB, smoker/non-smoker, duration of policy, biological gender and returns a (randomly generated) quote back to the user. It also stored the quotes in the database and user may then get their own quote history (currently hard-coded to get 6 most-recent ones)
 
