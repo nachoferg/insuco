@@ -52,5 +52,65 @@
         }
       }
     }
+  },
+  "insuco": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ioniccapstoneamplify-insuco-233609-authRole",
+      "UnauthRoleArn": "arn:aws:iam::022626042150:role/amplify-ioniccapstoneamplify-insuco-233609-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::022626042150:role/amplify-ioniccapstoneamplify-insuco-233609-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-ioniccapstoneamplify-insuco-233609-deployment",
+      "UnauthRoleName": "amplify-ioniccapstoneamplify-insuco-233609-unauthRole",
+      "StackName": "amplify-ioniccapstoneamplify-insuco-233609",
+      "StackId": "arn:aws:cloudformation:us-east-1:022626042150:stack/amplify-ioniccapstoneamplify-insuco-233609/65cdf7a0-be6a-11eb-a377-0aac80a39b9b",
+      "AmplifyAppId": "d1z0gz8h05flwd"
+    },
+    "categories": {
+      "auth": {
+        "ioniccapstoneamplifycff544c3": {}
+      },
+      "function": {
+        "writerlambda": {
+          "deploymentBucketName": "amplify-ioniccapstoneamplify-insuco-233609-deployment",
+          "s3Key": "amplify-builds/writerlambda-336432465442444d5a66-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1z0gz8h05flwd",
+          "type": "cicd"
+        }
+      }
+    }
+  },
+  "insucoes": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ioniccapstoneamplify-insucoes-133234-authRole",
+      "UnauthRoleArn": "arn:aws:iam::022626042150:role/amplify-ioniccapstoneamplify-insucoes-133234-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::022626042150:role/amplify-ioniccapstoneamplify-insucoes-133234-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-ioniccapstoneamplify-insucoes-133234-deployment",
+      "UnauthRoleName": "amplify-ioniccapstoneamplify-insucoes-133234-unauthRole",
+      "StackName": "amplify-ioniccapstoneamplify-insucoes-133234",
+      "StackId": "arn:aws:cloudformation:us-east-1:022626042150:stack/amplify-ioniccapstoneamplify-insucoes-133234/683978e0-bfa8-11eb-ac07-0e9061196303",
+      "AmplifyAppId": "d16fkhpaortg1a"
+    },
+    "categories": {
+      "auth": {
+        "ioniccapstoneamplifycff544c3": {}
+      },
+      "function": {
+        "writerlambda": {
+          "deploymentBucketName": "amplify-ioniccapstoneamplify-insucoes-133234-deployment",
+          "s3Key": "amplify-builds/writerlambda-336432465442444d5a66-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d16fkhpaortg1a",
+          "type": "cicd"
+        }
+      }
+    }
   }
 }

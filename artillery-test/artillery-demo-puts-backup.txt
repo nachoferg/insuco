@@ -11,12 +11,8 @@ config:
 scenarios:
     - name: read write test quotes
       flow:
-          - post:
+          - delete:
               url: "/"
               json:
                   pk: "foo@amazon.com"
-                  quote: 100
-                  age: 57
-                  gender: "Male"
-                  smoker: "No"
-                  test: "yes"
+                

@@ -12,7 +12,7 @@ Analytics.autoTrack('session', {
   enable: true
 });
 
-  Analytics.record({ name: 'requestquote-start'}); 
+  /** Analytics.record({ name: 'requestquote-start'}); */
 
 @Component({
   selector: 'app-form',
@@ -33,12 +33,12 @@ export class FormPage implements OnInit {
 
 
   sexes: any = [
-    { value: 'Hombre', viewValue: "Hombre" },
-    { value: 'Mujer', viewValue: "Mujer" }
+    { value: 'Male', viewValue: "Male" },
+    { value: 'Female', viewValue: "Female" }
   ];
 
   smoker: any = [
-    { value: 'Si', viewValue: "Si" },
+    { value: 'Yes', viewValue: "Yes" },
     { value: 'No', viewValue: "No" }
   ];
 
@@ -69,9 +69,6 @@ export class FormPage implements OnInit {
   };
 
     
-
-
-
     public logout(){
       Auth.signOut().then(res=>{
         this.router.navigate(['']);
@@ -107,8 +104,7 @@ export class FormPage implements OnInit {
         console.log(response);
         this.submitted = true;
         this.quote = response.data.quote;
-         // this.todo.reset();
-         Analytics.record({ name: 'requestquote-put'}); 
+        // this.todo.reset();
       })
       .catch(error => {
         console.log(error.response);

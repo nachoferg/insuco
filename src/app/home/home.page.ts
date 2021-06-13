@@ -2,7 +2,17 @@ import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { IonSlides } from '@ionic/angular';
 import { API, Auth } from 'aws-amplify';
+import Analytics from '@aws-amplify/analytics';
 
+Analytics.autoTrack('pageView', {
+  enable: true,
+  type: 'SPA'
+});
+Analytics.autoTrack('session', {
+  enable: true
+});
+
+  Analytics.record({ name: 'quotehome-start'}); 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -50,6 +60,7 @@ export class HomePage {
         console.log(response);
         this.queryItems = response.data;
         this.queryLoaded = true;
+        Analytics.record({ name: 'showhistoryquotehome-finish'}); 
       }).catch(error => console.log(error));
 
     }

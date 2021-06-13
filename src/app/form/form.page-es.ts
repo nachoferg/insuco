@@ -33,12 +33,12 @@ export class FormPage implements OnInit {
 
 
   sexes: any = [
-    { value: 'Hombre', viewValue: "Hombre" },
-    { value: 'Mujer', viewValue: "Mujer" }
+    { value: 'Male', viewValue: "Hombre" },
+    { value: 'Female', viewValue: "Mujer" }
   ];
 
   smoker: any = [
-    { value: 'Si', viewValue: "Si" },
+    { value: 'Yes', viewValue: "Si" },
     { value: 'No', viewValue: "No" }
   ];
 
@@ -108,7 +108,7 @@ export class FormPage implements OnInit {
         this.submitted = true;
         this.quote = response.data.quote;
          // this.todo.reset();
-         Analytics.record({ name: 'requestquote-put'}); 
+        //Analytics.record({ name: 'requestquote-put'}); 
       })
       .catch(error => {
         console.log(error.response);

@@ -1,6 +1,6 @@
 {
     "identityPoolName": "ioniccapstoneamplifycff544c3_identitypool_cff544c3",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "ionicccff544c3",
     "userPoolName": "ioniccapstoneamplifycff544c3_userpool_cff544c3",
     "autoVerifiedAttributes": [

@@ -48,6 +48,21 @@
           ]
         }
       ]
+    },
+    "insucoesgraphql": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authioniccapstoneamplifycff544c3"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
     }
   },
   "hosting": {
@@ -55,6 +70,12 @@
       "service": "amplifyhosting",
       "type": "cicd",
       "lastPushTimeStamp": "2021-04-13T13:00:35.351Z"
+    }
+  },
+  "analytics": {
+    "useast1insucoes": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
     }
   }
 }

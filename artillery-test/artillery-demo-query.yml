@@ -4,7 +4,7 @@ config:
   # and that should be the recommended way
   # For testing without auth, disable IAM auth on APIGW and deploy to a new stage
   #  add that stage endpoint as target below
-  target: "<Test Stage Endpoint with /writer at the end here>"
+  target: "https://jy6rndfu28.execute-api.us-east-1.amazonaws.com/insucoestest/writer"
   phases:
     - duration: 10
       arrivalRate: 50
