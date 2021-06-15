@@ -13,8 +13,7 @@ Analytics.autoTrack('session', {
   enable: true
 });
 
-  Analytics.record({ name: 'requestquote-start'}); 
-
+  Analytics.record({ name: 'requestquotehistory-start'}); 
 @Component({
   selector: 'app-history',
   templateUrl: './history.page.html',
@@ -35,7 +34,7 @@ export class HistoryPage implements OnInit {
 
   async presentToast() {
     const toast = await this.toastController.create({
-      message: "Oops! Looks like you had no previous quotes. If you did, please go home and visit this page agin.",
+      message: "Oops! Looks like you had no previous quotes. If you did, please go home and visit this page again.",
       duration: 3000
     });
     toast.present();
