@@ -13,7 +13,8 @@ Analytics.autoTrack('session', {
   enable: true
 });
 
-  Analytics.record({ name: 'requestquotehistory-start'}); 
+  Analytics.record({ name: 'requestquote-start'}); 
+
 @Component({
   selector: 'app-history',
   templateUrl: './history.page.html',
